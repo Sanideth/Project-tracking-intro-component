@@ -3,5 +3,30 @@
 *::after {
   box-sizing: border-box; }
 
+:root {
+  --color-red: hsl(0, 100%, 68%);
+  --color-blue: hsl(230, 29%, 20%);
+  --color-grey-dark: hsl(230, 11%, 40%);
+  --color-grey-medium: hsl(231, 7%, 65%);
+  --color-grey-light: hsl(207, 33%, 95%);
+  --font-family-primary: "Barlow", sans-serif;
+  --font-family-secondary: "Barlow Condensed", sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: #000; }
+  font-size: 1.8rem; }
+
+.App {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 10rem; }
+
+.left-column {
+  flex-basis: 50%; }
+
+.right-column {
+  flex-basis: 50%;
+  background-color: var(--color-grey-light); }

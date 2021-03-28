@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 10rem;
+}
+
+.left-column {
+  flex-basis: 50%;
+}
+
+.right-column {
+  flex-basis: 50%;
+  background-color: var(--color-grey-light);
+}
