@@ -10,7 +10,7 @@ const LeftColumn = () => (
     </div>
     <div className="left-column__heading-container">
       <p className="left-column__heading-intro">
-        <span className="left-column__span">New</span>Monograph Dashboard
+        <span className="left-column__span">New</span> Monograph Dashboard
       </p>
       <h1 className="heading-primary">Powerful Insights Into Your Team</h1>
       <p className="left-column__heading-middle">
