@@ -1,2 +1,24 @@
-.container {
+.heading-primary {
+  font-family: var(--font-family-secondary);
+  font-size: 6.5rem;
+  margin: 0;
+  letter-spacing: -0.2rem;
+  line-height: 1;
+
+  margin-bottom: 3rem;
+}
+
+.cta {
+  background-color: var(--color-red);
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
 }

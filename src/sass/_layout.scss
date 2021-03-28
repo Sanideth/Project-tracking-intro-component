@@ -1,15 +1,109 @@
+#root {
+  padding: 0 12rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   display: flex;
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
-  padding: 4rem 10rem;
+  padding-bottom: 8rem;
+  overflow: hidden;
 }
 
 .left-column {
-  flex-basis: 50%;
+  flex-basis: 45%;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  &__logo-container {
+    margin-bottom: 12rem;
+  }
+
+  &__heading-container {
+    margin-bottom: 8rem;
+  }
+  &__heading-intro {
+    font-size: 1.6rem;
+    font-family: var(--font-family-secondary);
+    letter-spacing: 0.5rem;
+    color: var(--color-grey-medium);
+    margin-bottom: 2rem;
+  }
+  &__span {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    letter-spacing: normal;
+  }
+  &__heading-middle {
+    text-transform: none;
+    color: var(--color-grey-dark);
+    font-size: 1.8rem;
+  }
+  &__cta-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cta-text {
+    font-size: 1.5rem;
+    color: var(--color-grey-medium);
+    letter-spacing: 0.3rem;
+    font-family: var(--font-family-secondary);
+  }
 }
 
 .right-column {
-  flex-basis: 50%;
+  flex-basis: 55%;
+  padding-top: 5rem;
   background-color: var(--color-grey-light);
+  align-self: flex-start;
+  padding-bottom: 30rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  position: relative;
+
+  &__image-container {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.nav {
+  margin: 0 auto;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+    &:nth-child(4) a {
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &:nth-child(4) a,
+    &:nth-child(5) a {
+      color: var(--color-grey-medium);
+    }
+  }
+  &__list-link {
+    color: var(--color-blue);
+    font-family: var(--font-family-secondary);
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

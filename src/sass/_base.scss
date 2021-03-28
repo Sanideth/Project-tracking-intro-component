@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --color-red: hsl(0, 100%, 68%);
@@ -18,4 +20,17 @@ html {
 }
 body {
   font-size: 1.8rem;
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
