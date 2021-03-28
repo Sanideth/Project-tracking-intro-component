@@ -2,11 +2,17 @@ const mockArr = ["Product", "Features", "Pricing", "", "Login"];
 
 const Nav = () => {
   const renderElements = mockArr.map((element) => (
-    <a href="https://github.com/Sanideth" className="nav__list-link">
-      <li className="nav__list-item">{element !== "" ? element : "\u2B24"}</li>
-    </a>
+    <li className="nav__list-item">
+      <a href="https://github.com/Sanideth" className="nav__list-link">
+        {element !== "" ? element : "\u2022"}
+      </a>
+    </li>
   ));
-  return <ul className="nav__list">{renderElements}</ul>;
+  return (
+    <nav className="nav">
+      <ul className="nav__list">{renderElements}</ul>
+    </nav>
+  );
 };
 
 export default Nav;
