@@ -10,8 +10,8 @@ const Nav = () => {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
   const styleNav = isHamburgerOpen ? "nav-mobile" : "";
-  const renderElements = mockArr.map((element) => (
-    <li className="nav__list-item">
+  const renderElements = mockArr.map((element, index) => (
+    <li className="nav__list-item" key={index}>
       <a href="https://github.com/Sanideth" className="nav__list-link">
         {element}
       </a>
