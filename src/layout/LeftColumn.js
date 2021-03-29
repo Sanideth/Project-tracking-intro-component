@@ -1,13 +1,7 @@
-import MainLogo from "../components/MainLogo";
 import ButtonCta from "../components/ButtonCta";
 
 const LeftColumn = () => (
   <div className="left-column">
-    <div className="left-column__logo-container">
-      <a href="https://github.com/Sanideth" className="left-column__logo-link">
-        <MainLogo />
-      </a>
-    </div>
     <div className="left-column__heading-container">
       <p className="left-column__heading-intro">
         <span className="left-column__span">New</span> Monograph Dashboard

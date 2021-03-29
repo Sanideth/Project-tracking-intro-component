@@ -1,3 +1,5 @@
+import Hamberger from "./Hamburger";
+
 const mockArr = ["Product", "Features", "Pricing", "", "Login"];
 
 const Nav = () => {
@@ -11,6 +13,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">{renderElements}</ul>
+      <Hamberger />
     </nav>
   );
 };
