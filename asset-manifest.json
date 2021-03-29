@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Project-tracking-intro-component/static/css/main.aaa67af4.chunk.css",
+    "main.js": "/Project-tracking-intro-component/static/js/main.785bdef7.chunk.js",
+    "main.js.map": "/Project-tracking-intro-component/static/js/main.785bdef7.chunk.js.map",
+    "runtime-main.js": "/Project-tracking-intro-component/static/js/runtime-main.b027f406.js",
+    "runtime-main.js.map": "/Project-tracking-intro-component/static/js/runtime-main.b027f406.js.map",
+    "static/js/2.80d8ad1a.chunk.js": "/Project-tracking-intro-component/static/js/2.80d8ad1a.chunk.js",
+    "static/js/2.80d8ad1a.chunk.js.map": "/Project-tracking-intro-component/static/js/2.80d8ad1a.chunk.js.map",
+    "static/js/3.ad055cd0.chunk.js": "/Project-tracking-intro-component/static/js/3.ad055cd0.chunk.js",
+    "static/js/3.ad055cd0.chunk.js.map": "/Project-tracking-intro-component/static/js/3.ad055cd0.chunk.js.map",
+    "index.html": "/Project-tracking-intro-component/index.html",
+    "static/css/main.aaa67af4.chunk.css.map": "/Project-tracking-intro-component/static/css/main.aaa67af4.chunk.css.map",
+    "static/js/2.80d8ad1a.chunk.js.LICENSE.txt": "/Project-tracking-intro-component/static/js/2.80d8ad1a.chunk.js.LICENSE.txt",
+    "static/media/icon-close.c77a2797.svg": "/Project-tracking-intro-component/static/media/icon-close.c77a2797.svg",
+    "static/media/icon-hamburger.d2a3eed8.svg": "/Project-tracking-intro-component/static/media/icon-hamburger.d2a3eed8.svg",
+    "static/media/illustration-devices.30f97032.svg": "/Project-tracking-intro-component/static/media/illustration-devices.30f97032.svg",
+    "static/media/logo.52a9134a.svg": "/Project-tracking-intro-component/static/media/logo.52a9134a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b027f406.js",
+    "static/js/2.80d8ad1a.chunk.js",
+    "static/css/main.aaa67af4.chunk.css",
+    "static/js/main.785bdef7.chunk.js"
+  ]
+}
