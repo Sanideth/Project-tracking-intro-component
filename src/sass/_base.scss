@@ -5,6 +5,12 @@
   margin: 0;
   padding: 0;
 }
+// breakpoints
+
+$bp-medium: 56.25em; // bp at 900px
+$bp-small: 47em; //bp at 752 px
+$bp-tiny: 43.75em; // bp at 700px
+
 :root {
   --color-red: hsl(0, 100%, 68%);
   --color-blue: hsl(230, 29%, 20%);
@@ -17,6 +23,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 55%;
+  }
 }
 body {
   font-size: 1.8rem;

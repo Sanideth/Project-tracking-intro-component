@@ -1,30 +1,93 @@
 #root {
-  padding: 0 12rem;
+  padding: 0 4rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: $bp-tiny) {
+    height: auto;
+  }
 }
 
 .App {
-  display: flex;
-  max-width: 140rem;
+  max-width: 100rem;
   margin: 0 auto;
-  padding-bottom: 8rem;
+
   overflow: hidden;
 }
 
-.left-column {
-  flex-basis: 45%;
-  padding-top: 5rem;
-  padding-right: 2rem;
+.header {
   &__logo-container {
-    margin-bottom: 12rem;
+    flex-basis: 50%;
+    padding-top: 5rem;
   }
+}
+
+.nav {
+  background-color: var(--color-grey-light);
+  flex-basis: 50%;
+  padding: 5rem 0 25rem 0;
+  border-bottom-left-radius: 5rem;
+  @media only screen and (max-width: $bp-tiny) {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    padding-bottom: 35rem;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: $bp-tiny) {
+      display: none;
+    }
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+    &:nth-child(4) a {
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &:nth-child(4) a,
+    &:nth-child(5) a {
+      color: var(--color-grey-medium);
+    }
+  }
+  &__list-link {
+    color: var(--color-blue);
+    font-family: var(--font-family-secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hamburger-container {
+  display: none;
+  @media only screen and (max-width: $bp-tiny) {
+    display: block;
+  }
+}
+.main {
+  margin-top: -13rem;
+  @media only screen and (max-width: $bp-tiny) {
+    margin-top: -28rem;
+  }
+}
+
+.left-column {
+  flex-basis: 50%;
 
   &__heading-container {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
   &__heading-intro {
     font-size: 1.6rem;
@@ -49,6 +112,7 @@
   &__cta-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   &__cta-text {
@@ -56,54 +120,32 @@
     color: var(--color-grey-medium);
     letter-spacing: 0.3rem;
     font-family: var(--font-family-secondary);
+    @media only screen and (max-width: $bp-medium) {
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      letter-spacing: normal;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    order: 2;
   }
 }
 
 .right-column {
-  flex-basis: 55%;
-  padding-top: 5rem;
-  background-color: var(--color-grey-light);
-  align-self: flex-start;
-  padding-bottom: 30rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-  position: relative;
+  flex-basis: 50%;
 
-  &__image-container {
-    position: absolute;
-    top: 50%;
+  &__image {
+    display: block;
+    width: 150%;
+    height: 60%;
   }
-}
 
-.nav {
-  margin: 0 auto;
-  &__list {
-    display: flex;
-    justify-content: center;
+  @media only screen and (max-width: $bp-small) {
+    order: 1;
+    margin-bottom: 5rem;
   }
-  &__list-item {
-    &:not(:last-child) {
-      margin-right: 3.5rem;
-    }
-    &:nth-child(4) a {
-      cursor: default;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    &:nth-child(4) a,
-    &:nth-child(5) a {
-      color: var(--color-grey-medium);
-    }
-  }
-  &__list-link {
-    color: var(--color-blue);
-    font-family: var(--font-family-secondary);
-    font-size: 1.7rem;
-    font-weight: 700;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  @media only screen and (max-width: $bp-tiny) {
+    margin-bottom: 8rem;
   }
 }

@@ -1,0 +1,7 @@
+//flex direction column
+
+@media only screen and (max-width: $bp-small) {
+  .u-fl-c {
+    flex-direction: column;
+  }
+}
