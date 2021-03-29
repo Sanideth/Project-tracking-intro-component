@@ -1,13 +1,18 @@
 import "./App.css";
-import Container from "./components/Container";
+import Header from "./layout/Header";
 import LeftColumn from "./layout/LeftColumn";
 import RightColumn from "./layout/RightColumn";
 
 const App = () => {
   return (
     <div className="App">
-      <LeftColumn />
-      <RightColumn />
+      <Header />
+      <main className="main">
+        <div className="row u-fl-c">
+          <LeftColumn />
+          <RightColumn />
+        </div>
+      </main>
     </div>
   );
 };
