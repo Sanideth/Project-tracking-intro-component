@@ -34,6 +34,9 @@ a:link {
 ul {
   list-style: none; }
 
+button {
+  border: none; }
+
 #root {
   padding: 0 4rem;
   height: 100vh;
@@ -178,6 +181,10 @@ ul {
   transition: all 0.3s; }
   .cta:hover {
     opacity: 0.8; }
+
+@media only screen and (max-width: 43.75em) {
+  .logo {
+    height: 2.4rem; } }
 
 @media only screen and (max-width: 47em) {
   .u-fl-c {

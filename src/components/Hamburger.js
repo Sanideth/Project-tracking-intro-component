@@ -3,7 +3,9 @@ import Close from "../img/icon-close.svg";
 
 const Hamburger = () => (
   <div className="hamburger-container">
-    <img src={Open} alt="Hamburger open icon" className="hamburger-open" />
+    <button className="btn btn-hamburger">
+      <img src={Open} alt="Hamburger open icon" className="hamburger-open" />
+    </button>
   </div>
 );
 
